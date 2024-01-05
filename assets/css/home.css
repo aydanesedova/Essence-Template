@@ -1,0 +1,580 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  min-height: 85px;
+  border: 1px solid #EBEBEB;
+  background-color: white;
+  position: absolute !important;
+  z-index: 1;
+  position: fixed !important;
+}
+nav .essence {
+  width: 90%;
+}
+nav .essence .essenceList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42%;
+  gap: 5px;
+}
+nav .essence .essenceList li a {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #a4a3a3 !important;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList li a:hover {
+  color: #000 !important;
+}
+nav .essence .essenceList .pages {
+  position: relative;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages:hover {
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages:hover .pagesHover {
+  display: block;
+  position: absolute;
+  top: 55px;
+  background-color: #fff;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages .pagesHover {
+  display: none;
+}
+nav .essence .essenceList .pages .pagesHover p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 30px;
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #a4a3a3 !important;
+  border-top: 1px solid #aaa;
+  width: 100%;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+nav .essence .essenceList .pages .pagesHover p:hover {
+  color: #000 !important;
+}
+nav .essence .cartUserSearch {
+  min-height: 85px;
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 42px;
+  list-style: none;
+}
+nav .essence .cartUserSearch li a i {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+nav .essence .cartUserSearch .searchInp {
+  min-height: 85px;
+  min-width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  border-right: 1px solid #EBEBEB;
+  border-left: 1px solid #EBEBEB;
+}
+nav .essence .cartUserSearch .searchInp #inp {
+  border: none;
+  background-color: transparent;
+  min-width: 80%;
+  min-height: 35%;
+}
+nav .essence .cartUserSearch .searchInp #inp::placeholder {
+  color: #787878;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+nav .essence .cartUserSearch .searchInp #btn {
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 620px) {
+  nav .essence .cartUserSearch .searchInp #inp::placeholder {
+    font-size: 10px;
+  }
+  nav .essence .cartUserSearch .searchInp i {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 497px) {
+  nav .essence .cartUserSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .essence .cartUserSearch .searchInp {
+    display: none;
+  }
+}
+#newCollection {
+  width: 100%;
+  min-height: 600px;
+  background-image: url(/assets/images/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#newCollection .newCollectionTxt {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#newCollection .newCollectionTxt span {
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+  color: #787878;
+  line-height: 23px;
+  font-weight: 700;
+}
+#newCollection .newCollectionTxt h2 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 60px;
+  color: #000;
+  line-height: 108px;
+  font-weight: 800;
+}
+#newCollection .newCollectionTxt button {
+  min-height: 50px;
+  width: 20%;
+  border: none;
+  background-color: #0315FF;
+  color: #fff;
+  font-size: 12px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: poppins;
+  transition: 0.5s ease;
+}
+#newCollection .newCollectionTxt button:hover {
+  background-color: #DC0345;
+}
+
+@media screen and (max-width: 768px) {
+  #newCollection .newCollectionTxt h2 {
+    font-size: 40px;
+  }
+  #newCollection .newCollectionTxt button {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 382px) {
+  #newCollection .newCollectionTxt span {
+    font-size: 10px;
+  }
+  #newCollection .newCollectionTxt h2 {
+    font-size: 30px;
+  }
+  #newCollection .newCollectionTxt button {
+    font-size: 6px;
+  }
+}
+#clothing {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clothing .clothingTxt {
+  width: 100%;
+  min-height: 283.56px;
+  position: relative;
+}
+#clothing .clothingTxt .clothingImg {
+  width: 100%;
+  height: 100%;
+}
+#clothing .clothingTxt .clothingImg img {
+  width: 100%;
+  height: 100%;
+}
+#clothing .clothingTxt .clothingHover {
+  background-color: rgba(255, 255, 255, 0.568627451);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+#clothing .clothingTxt .clothingHover h2 {
+  font-family: poppins, sans-serif;
+  font-size: 30px;
+  color: #000;
+  line-height: 45px;
+  font-weight: 700;
+  transition: 0.4s ease;
+}
+#clothing .clothingTxt .clothingHover h2:hover {
+  color: #0315ff;
+  cursor: pointer;
+}
+
+#globalSale {
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#globalSale .container {
+  background-image: url(/assets/images/bg-5.jpg);
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-position: center;
+  background-size: cover;
+}
+#globalSale .container .globalSaleTxt {
+  min-width: 500px;
+}
+#globalSale .container .globalSaleTxt span {
+  font-family: Ubuntu, sans-serif;
+  font-size: 24px;
+  color: #DC0345;
+  line-height: 31px;
+  font-weight: 700;
+}
+#globalSale .container .globalSaleTxt h2 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 60px;
+  color: #000;
+  line-height: 108px;
+  font-weight: 800;
+}
+#globalSale .container .globalSaleTxt button {
+  width: 35%;
+  min-height: 50px;
+  border: none;
+  background-color: #0315FF;
+  color: #fff;
+  font-size: 12px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: poppins;
+  transition: 0.5s ease;
+}
+#globalSale .container .globalSaleTxt button:hover {
+  background-color: #DC0345;
+}
+
+@media screen and (max-width: 992px) {
+  #globalSale .container {
+    width: 80%;
+    min-height: 450px;
+  }
+  #globalSale .container .globalSaleTxt {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  #globalSale .container .globalSaleTxt h2 {
+    font-size: 20px;
+  }
+  #globalSale .container .globalSaleTxt span {
+    font-size: 15px;
+  }
+}
+#popularProducts {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#popularProducts .popularProductsTxt {
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#popularProducts .popularProductsTxt h2 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 30px;
+  color: #000;
+  line-height: 39px;
+  font-weight: 600;
+}
+#popularProducts #productsAll {
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#popularProducts #productsAll .miniDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 23%;
+  margin-top: 10px;
+}
+#popularProducts #productsAll .miniDiv img {
+  width: 220px;
+}
+#popularProducts #productsAll .miniDiv h2 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 39px;
+  font-weight: 600;
+}
+#popularProducts #productsAll .miniDiv button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0315FF;
+  color: #fff;
+  font-size: 10px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: poppins;
+  transition: 0.5s ease;
+}
+#popularProducts #productsAll .miniDiv button:hover {
+  border: 2px solid #0315FF;
+  color: #0315FF;
+  background-color: white;
+}
+#popularProducts .loadMore {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#popularProducts .loadMore #loadMore {
+  min-width: 15%;
+  min-height: 50px;
+  border: none;
+  background-color: #0315FF;
+  color: #fff;
+  font-size: 12px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: poppins;
+  transition: 0.5s ease;
+}
+#popularProducts .loadMore #loadMore:hover {
+  border: 2px solid #0315FF;
+  color: #0315FF;
+  background-color: white;
+}
+
+@media screen and (max-width: 460px) {
+  #popularProducts .loadMore #loadMore {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #popularProducts #productsAll .miniDiv button {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 467px) {
+  #popularProducts #productsAll .miniDiv button {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #popularProducts #productsAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+#brand {
+  min-height: 230px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F5F7F9;
+}
+#brand .brandLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#brand .brandLogo img {
+  min-height: 16px;
+  width: 107px;
+}
+
+footer {
+  min-height: 417px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+footer .essenceShopList {
+  min-height: 200px;
+}
+footer .essenceShopList .essenceShopListTxt {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+footer .essenceShopList .essenceShopListTxt img {
+  height: 16px;
+  width: 74px;
+}
+footer .essenceShopList .essenceShopListTxt .list {
+  display: flex;
+  gap: 17px;
+  margin-top: 12px;
+}
+footer .essenceShopList .essenceShopListTxt .list p {
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+  color: #787878;
+  line-height: 24px;
+  font-weight: 500;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+footer .essenceShopList .essenceShopListTxt .list p:hover {
+  color: #fff;
+}
+footer .essenceShopList .subscribe {
+  min-height: 140px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .essenceShopList .subscribe h5 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: 16px;
+  font-weight: 700;
+}
+footer .essenceShopList .subscribe .subscribeInp {
+  background-color: #0315FF;
+  background-color: transparent;
+  border-bottom: 2px solid #787878;
+  width: 40%;
+}
+footer .essenceShopList .subscribe .subscribeInp input {
+  border: none;
+  width: 90%;
+  background-color: transparent;
+}
+footer .essenceShopList .subscribe .subscribeInp input::placeholder {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+}
+footer .essenceShopList .subscribe .subscribeInp i {
+  color: #787878;
+}
+footer .orderPayment {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 150px;
+}
+footer .orderPayment .orderAboutTxt p {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+footer .orderPayment .orderAboutTxt p:hover {
+  color: #fff;
+}
+footer .orderPayment .paymentAboutTxt p {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+footer .orderPayment .paymentAboutTxt p:hover {
+  color: #fff;
+}
+footer .socialMedia {
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .socialMedia .socialMediaIcon {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+footer .socialMedia .socialMediaIcon i {
+  color: #fff;
+  cursor: pointer;
+}
+footer .copyright {
+  min-height: 130px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+footer .copyright p {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+footer .copyright p span {
+  color: #000;
+  cursor: pointer;
+}
